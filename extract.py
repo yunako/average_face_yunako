@@ -26,6 +26,13 @@ def main():
     detector = dlib.get_frontal_face_detector()
     predictor = dlib.shape_predictor(predictor_path)
 
+    except_folder_path = faces_folder_path + '/except_folder/'
+
+    if os.path.isdir(except_folder_path):
+        pass
+    else:
+        os.mkdir(except_folder_path)
+
     for f in glob.glob(os.path.join(faces_folder_path, "*.JPG")):
         try:
             print("Processing file: {}".format(f))
@@ -37,7 +44,8 @@ def main():
             if len(dets) == 0 : 
                 print("얼굴인식이 안됨, len(dets): ", len(dets))
                 tmp = f.split('/')
-                shutil.move(faces_folder_path+'/'+tmp[-1], '/Users/yunako/Documents/Bigdata_study/average-faces-opencv-master/except_folder/'+ tmp[-1])
+
+                shutil.move(faces_folder_path+'/'+tmp[-1], except_folder_path+tmp[-1])
 
             else:
                 for k, d in enumerate(dets):
