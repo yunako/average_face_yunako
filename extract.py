@@ -45,7 +45,7 @@ def main():
                 print("얼굴인식이 안됨, len(dets): ", len(dets))
                 tmp = f.split('/')
 
-                shutil.move(faces_folder_path+'/'+tmp[-1], except_folder_path+tmp[-1])
+                shutil.move(faces_folder_path+'/'+tmp[-1], except_folder_path+'/'+tmp[-1])
 
             else:
                 for k, d in enumerate(dets):
@@ -74,7 +74,7 @@ def main():
         except:
             print("예외발생")
             tmp = f.split('/')
-            shutil.move(faces_folder_path+'/'+tmp[-1], '/Users/yunako/Documents/Bigdata_study/average-faces-opencv-master/except_folder/'+ tmp[-1])
+            shutil.move(faces_folder_path+'/'+tmp[-1], except_folder_path +'/'+ tmp[-1])
 
 
 if __name__ == '__main__' :
