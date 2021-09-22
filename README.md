@@ -25,3 +25,5 @@ To find landmarks, you have to download ".dat" file.
 ## If you have any questions, please contact my mail.
 
 **yunako's email**: [![Gmail Badge](https://img.shields.io/badge/Gmail-d14836?style=flat-square&logo=Gmail&logoColor=white&link=mailto:koyuna2837@gmail.com)](mailto:koyuna2837@gmail.com)
+
+**yunako's blog**: https://blog.naver.com/zxver1000/222513237359
