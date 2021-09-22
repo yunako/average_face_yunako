@@ -13,7 +13,7 @@ To find landmarks, you have to download ".dat" file.
 
 
 ## Method(cmd)
-0. Download 
+0. Download the images (If you want to use the politicians images)
 > python download.py {images folder path which you want to save in}
 1. Find a face landmarks and Make 68 landmarks files(.txt).
 > python extract.py shape_predictor_68_face_landmarks.dat {images folder path}
