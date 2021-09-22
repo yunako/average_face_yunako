@@ -13,6 +13,8 @@ To find landmarks, you have to download ".dat" file.
 
 
 ## Method(cmd)
+0. Download 
+> python download.py {images folder path which you want to save in}
 1. Find a face landmarks and Make 68 landmarks files(.txt).
 > python extract.py shape_predictor_68_face_landmarks.dat {images folder path}
 2. Make an average face (an image and gif file)
